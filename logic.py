@@ -49,8 +49,6 @@ def readMinute(minute):
     units = minute % 10
     if units == 0 or minute < 30 or minute == 45:
         return ' y ' + numberToText[minute]
-    if minute < 30:
-        return ' y ' + numberToText[minute]
     return ' y ' + numberToText[tens] + ' y ' + numberToText[units]
 
 
